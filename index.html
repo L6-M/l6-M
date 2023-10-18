@@ -5,6 +5,10 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="./styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <!-- Google fonts ↓ -->
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inconsolata:wght@200;300;400;500;600;700;800;900&display=swap" rel="stylesheet">
     <title>Alexey Martínez</title>
 
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -14,14 +18,14 @@
 </head>
 <body>
     <figure>
-        <img src="" alt="Alexey's Picture" />
+        <img src="https://media.licdn.com/dms/image/D5603AQHCgPfJNR7qdQ/profile-displayphoto-shrink_800_800/0/1697591367192?e=1703116800&v=beta&t=cp3NUlQ92IQ13ZVvBffCgkXXuYGw_rpqzT4tXUHjQRQ" alt="Alexey's Picture" class="profile-picture"/>
     </figure>
 
-    <section class="iMAlxy-Section">
+    <section class="iMAlxy-section">
 
-        <h1>Hello,<span>&nbsp;I'm Alexey Martínez</span> <span>&nbsp;_</span></h1>
+        <h1 class="imAlxy-section__header">Hello,<span>&nbsp;I'm Alexey Martínez</span><span>&nbsp;_</span></h1>
 
-        <div>
+        <ul class="imAlxy-section__about-me">
             <button>About me</button>
             <li>
                 <p>
@@ -46,7 +50,7 @@
                     Lorem ipsum dolor sit, amet consectetur adipisicing elit. Incidunt iusto libero, ducimus repudiandae tempora sit repellendus possimus? Nam, voluptate magnam? Dolores ipsam nulla, eligendi magnam quasi explicabo neque inventore est.
                 </p>
             </li>
-        </div>
+        </ul>
     </section>
 
     <section>
@@ -81,21 +85,36 @@
         </div>
     </section>
 
-    <section>
-        <li><a href="www.linkedin.com/in/iMAlexey" target="_blank"><img src="./media/contact-media__linkedin.svg" alt="Alexey's LinkedIn Profile"><span>iMAlexey</span></a></li>
-        <li><a href="https://github.com/iMAlxy" target="_blank"><img src="./media/contact-media__github.svg" alt="Alexey's GitHub Profile"><span>iMAlxy</span></a></li>
-        <li><a href="https://twitter.com/L6_Mtz" target="_blank"><img src="./media/contact-media__twitter.svg" alt="Alexey's Twitter (or X)"><span>@L6_Mtz </span></a></li>
-        <li><a href="mailto:alexey.am@hotmail.com" target="_blank"><img src="./media/contact-media__mail.svg" alt="Alexey's Mail"><span>alexey.am@hotmail.com</span></a></li>
+    <section class="contact-info-section">
+        <h3 class="contact-info-section__header">Here's my contact info</h3>
+
+        <ul class="contact-info-section__list">
+            <li class="contact-info-section__linkedin">
+                <a href="www.linkedin.com/in/iMAlexey" target="_blank"><img src="./media/contact-media__linkedin.svg" alt="Alexey's LinkedIn Profile"><span>iMAlexey</span></a>
+            </li>
+            
+            <li class="contact-info-section__github">
+                <a href="https://github.com/iMAlxy" target="_blank"><img src="./media/contact-media__github.svg" alt="Alexey's GitHub Profile"><span>iMAlxy</span></a>
+            </li>
+            
+            <li class="contact-info-section__twitter">
+                <a href="https://twitter.com/L6_Mtz" target="_blank"><img src="./media/contact-media__twitter.svg" alt="Alexey's Twitter (or X)"><span>@L6_Mtz </span></a>
+            </li>
+
+            <li class="contact-info-section__mail">
+                <a href="mailto:alexey.am@hotmail.com" target="_blank"><img src="./media/contact-media__mail.svg" alt="Alexey's Mail"><span>alexey.am@hotmail.com</span></a>
+            </li>
+        </ul>
     </section>
 
 
-    <section class="laugh">
+    <!-- <section class="laugh">
         <p>
         </p>
 
 
         <img src="https://i.imgur.com/PfA0M2o.gif"/>
         <p>Have a nice day :3</p>
-    </section>
+    </section> -->
     </body>
 </html>

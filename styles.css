@@ -1,3 +1,16 @@
+
+:root {
+    --white:#FFF;
+    --gray-dark: #282828;
+    --black: #000000;
+    --blue-aero: #5BC0EB;
+    --blue-indigo-dye: #094074;
+    --yellow-mustard: #FFDD4A;
+    --orange-light: #ffdcc6;
+    --orange-princeton: #FE9000;
+    --orange-giants: #FE5D26;
+}
+
 * {
     margin: 0;
     padding: 0;
@@ -5,9 +18,84 @@
 }
 
 body {
-    background-color: #202020;
+    background-color: var(--orange-light);
+
+    justify-content: center;
+    align-items: center;
+    text-align: center;
 }
 
+img {
+    width: 50px;
+}
+
+li {
+    list-style: none;
+}
+
+button {
+    display: none;
+}
+
+.profile-picture {
+    width: 60vw;
+
+    border-radius: 100%;
+}
+
+.iMAlxy-section {
+    margin: .8em;
+}
+
+.imAlxy-section__header {
+    font-family: 'Inconsolata', monospace;
+    font-size: 1.3em;
+
+    text-align: center;
+    
+    /* white-space: nowrap; */
+    /* display: inline-block; */
+}
+
+.imAlxy-section__header > span:first-child {
+    color: var(--orange-giants);
+}
+
+.imAlxy-section__about-me {
+    width: 100vw;
+
+    margin: 1.2em .4em;
+
+    overflow-x: scroll;
+    
+    display: grid;
+    grid-template-columns: 100vw 100vw 100vw 100vw;
+
+}
+
+
+
+
+.contact-info-section {
+
+}
+
+.contact-info-section__header{
+
+}
+
+.contact-info-section__list {
+    display: grid;
+    grid-template: 1fr 1fr / 1fr 1fr;
+}
+
+.contact-info-section__linkedin {
+
+}
+
+
+/* Here's the code for the funny initial test />
+/* 
 h1 {
     display: flex;
         align-items: center;
@@ -39,4 +127,4 @@ h1 {
     width: 500px;
     height: 500px;
     border-radius: 1em;
-}
+} */
