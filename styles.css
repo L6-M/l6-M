@@ -37,14 +37,29 @@ button {
     display: none;
 }
 
+.profile-picture_container {
+    position: absolute;
+
+    left: 50%;
+
+    transform: translate(-50%);
+}
+
 .profile-picture {
     width: 60vw;
 
     border-radius: 100%;
+
+
 }
 
 .iMAlxy-section {
-    margin: .8em;
+    height: 100vh;
+
+    display: grid;
+    justify-content: center;
+    align-items: center;
+    
 }
 
 .imAlxy-section__header {
