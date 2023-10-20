@@ -18,7 +18,7 @@
     box-sizing: border-box;
 }
 
-img {
+.contact-info-section img {
     width: 50px;
 }
 
@@ -81,7 +81,7 @@ li {
     font-size: 1.2em;
 }
 
-.imAlxy-section__headers {
+.imAlxy-section__tabs {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr 1fr;
     justify-content: center;
@@ -92,7 +92,7 @@ li {
     height: 2rem;
 }
 
-.imAlxy-section__headers > li {
+.imAlxy-section__tabs > li {
     background-color: var(--orange-giants);
     color: var(--white);
 
@@ -105,7 +105,7 @@ li {
     border-radius: .4rem .4rem 0 0;
 }
 
-.imAlxy-section__headers > li:first-child {
+.imAlxy-section__tabs > li:first-child {
     background-color: var(--white);
     color: var(--gray-dark);
 }
@@ -125,6 +125,96 @@ li {
     
     display: flex;
     align-items: center;
+}
+
+/* Here's the beginning of the second section */
+
+.proyects-section {
+    height: 100vh;
+
+    padding: 1.2rem;
+    
+    background-color: var(--blue-aero);
+
+    display: grid;
+    grid-template-rows: auto 1fr;
+    gap: 1.2rem;
+}
+
+.proyects-section > h2 {
+    font-family: 'Inconsolata', monospace;
+    font-size: 1.4em;
+    text-align: center;
+    
+    padding: 1.2rem;
+    
+    background-color: var(--white);
+    
+    background-color: white;
+    
+    border-radius: 0 10rem 10rem 10rem;
+}
+
+.proyects-section > h2 > span {
+    color: var(--blue-indigo-dye);
+}
+
+
+.proyects-section__proyect {
+    display: grid;
+    grid-template-rows: auto 1fr;
+}
+
+.proyects-section__proyect__tabs{
+    display: flex;
+    justify-content: space-around;
+    gap: 12px;
+
+    height: 2rem;
+
+}
+.proyects-section__proyect__tabs > li {
+    background-color: var(--blue-indigo-dye);
+    width: 100%;
+    
+    border-radius: .4rem .4rem 0 0;
+
+    font-family: 'Didact Gothic', sans-serif;
+    letter-spacing: 2px;
+    color: var(--white);
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.proyects-section__proyect__tabs > li:first-child {
+    background-color: var(--white);
+    color: var(--gray-dark);
+}
+
+.proyects-section__proyect-preview {
+    background-color: var(--white);
+    
+    border-radius: 0 0 1.2rem 1.2rem;
+
+    display: flex;
+}
+
+.proyects-section__proyect-preview > img {
+    width: auto;
+    height: 400px;
+
+    border-radius: 1rem;
+}
+
+
+.proyects-section_header-image {
+
+}
+
+.proyects-section_proyect {
+
 }
 
 .contact-info-section {
