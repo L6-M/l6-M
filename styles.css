@@ -122,17 +122,19 @@ li {
     background-color: var(--orange-giants);
     color: var(--white);
 
-    letter-spacing: 2px;
-    
-    font-family: 'Didact Gothic', sans-serif;
-    font-size: 1.2rem;
-    font-weight: bold;
-
     display: flex;
     justify-content: center;
     align-items: center;
 
     border-radius: .4rem .4rem 0 0;
+}
+
+.imAlxy-section__tabs > li > h5 {
+    letter-spacing: 2px;
+    
+    font-family: 'Didact Gothic', sans-serif;
+    font-size: 1.2rem;
+    font-weight: bold;
 }
 
 .imAlxy-section__tabs > li:first-child {
@@ -165,48 +167,30 @@ li {
     gap: 1.2rem;
 }
 
-/* .proyects-section > h2 {
-    font-family: 'Inconsolata', monospace;
-    font-size: 1.4em;
-    text-align: center;
-    
-    padding: 1.2rem;
-    
-    background-color: var(--white);
-    
-    background-color: white;
-    
-    border-radius: 0 10rem 10rem 10rem;
-} */
-
 .proyects-section__proyect {
     display: grid;
     grid-template-rows: auto 1fr;
 }
 
-.proyects-section__proyect__tabs{
-    /* display: flex;
-    justify-content: space-around;
-    gap: 12px;
-
-    height: 2rem; */
-
-}
 .proyects-section__proyect__tabs > li {
     background-color: var(--orange-giants);
     width: 100%;
     
     border-radius: .4rem .4rem 0 0;
 
-    font-family: 'Didact Gothic', sans-serif;
-    font-size: 1.2rem;
-    font-weight: bold;
-    letter-spacing: 2px;
     color: var(--white);
 
     display: flex;
     justify-content: center;
     align-items: center;
+}
+
+.proyects-section__proyect__tabs > li > h5 {
+    letter-spacing: 2px;
+    
+    font-family: 'Didact Gothic', sans-serif;
+    font-size: 1.2rem;
+    font-weight: bold;
 }
 
 .proyects-section__proyect__tabs > li:first-child {
@@ -227,16 +211,19 @@ li {
     
     border-radius: 0 0 1.2rem 1.2rem;
 
+    padding: 1.2rem;
+
     display: flex;
+    align-items: center;
+    justify-content: center;
 }
 
 .proyects-section__proyect-preview > img {
     width: auto;
-    height: 400px;
+    height: 60vh;
 
     border-radius: 1rem;
-
-    background-color: var();
+    border: solid var(--orange-giants);
 }
 
 .contact-info-section {
@@ -247,7 +234,7 @@ li {
 
 .contact-info-section__list {
     display: grid;
-    grid-template: 1fr 1fr  1fr 1fr;
+    grid-template: 1fr 1fr 1fr 1fr;
     gap: 1.2rem;
 }
 
