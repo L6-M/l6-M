@@ -118,28 +118,11 @@ li {
     font-size: 1.2em;
 }
 
-.imAlxy-section__tabs > li {
-    background-color: var(--orange-giants);
-    color: var(--white);
-
+.imAlxy-section__tabs-tab {
     display: flex;
     justify-content: center;
     align-items: center;
 
-    border-radius: .4rem .4rem 0 0;
-}
-
-.imAlxy-section__tabs > li > h5 {
-    letter-spacing: 2px;
-    
-    font-family: 'Didact Gothic', sans-serif;
-    font-size: 1.2rem;
-    font-weight: bold;
-}
-
-.imAlxy-section__tabs > li:first-child {
-    background-color: var(--white);
-    color: var(--gray-dark);
 }
 
 .imAlxy-section__content {
@@ -173,24 +156,11 @@ li {
 }
 
 .proyects-section__proyect__tabs > li {
-    background-color: var(--orange-giants);
     width: 100%;
     
-    border-radius: .4rem .4rem 0 0;
-
-    color: var(--white);
-
     display: flex;
     justify-content: center;
     align-items: center;
-}
-
-.proyects-section__proyect__tabs > li > h5 {
-    letter-spacing: 2px;
-    
-    font-family: 'Didact Gothic', sans-serif;
-    font-size: 1.2rem;
-    font-weight: bold;
 }
 
 .proyects-section__proyect__tabs > li:first-child {
@@ -267,3 +237,28 @@ li {
     text-decoration: none;
 }
 
+/* Here's the code for only sections tabs */
+
+
+.section-tabs > li {
+    border-radius: .4rem .4rem 0 0;
+    
+}
+
+.section-tabs > li > h5 {
+    letter-spacing: 2px;
+    
+    font-family: 'Didact Gothic', sans-serif;
+    font-size: 1.2rem;
+    font-weight: bold;
+}
+
+.inactive-tab {
+    background-color: var(--orange-giants);
+    color: var(--white);
+}
+
+.active-tab {
+    background-color: var(--white);
+    color: var(--gray-dark);
+}
