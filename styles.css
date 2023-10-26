@@ -67,8 +67,6 @@ li {
     height: calc(100vh - 2 * 1.2rem);
 }
 
-
-
 .iMAlxy-section {
     display: flex;
     flex-direction: column;
@@ -125,6 +123,13 @@ li {
 
 }
 
+.imAlxy-section__content > .active-content-tab {
+    display: flex;
+}
+
+.imAlxy-section__content > .inactive-content-tab {
+    display: none;
+}
 .imAlxy-section__content {
     background-color: var(--white);
     height: calc(100% - 2rem);
@@ -135,6 +140,7 @@ li {
 
 .imAlxy-section__content > li  {
     height: 100%;
+    width: 100%;
 
     font-size: 5vw;
     
