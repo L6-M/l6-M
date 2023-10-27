@@ -62,16 +62,14 @@ li {
 }
 
 .sections {
-    margin: 1.2rem;
+    padding: 1.2rem;
 
-    height: calc(100vh - 2 * 1.2rem);
-}
+    height: 100vh;
 
-.iMAlxy-section {
     display: flex;
     flex-direction: column;
     gap: 1.2rem;
-    align-items: center;   
+    align-items: center;
 }
 
 .profile-picture_container {
@@ -109,7 +107,8 @@ li {
     color: var(--orange-giants);
 }
 
-.imAlxy-section__about-me {
+.imAlxy-section__about-me,
+.proyects-section__proyect {
     height: 100%;
     
     font-family: 'Didact Gothic', sans-serif;
@@ -120,7 +119,16 @@ li {
     display: flex;
     justify-content: center;
     align-items: center;
+    
+}
 
+.imAlxy-section__content,
+.proyects-section__proyect__content {
+    background-color: var(--white);
+    height: calc(100% - 2rem);
+    padding: 1.2rem;
+    
+    border-radius: 0 0 1.2rem 1.2rem;
 }
 
 .imAlxy-section__content > .active-content-tab {
@@ -129,13 +137,6 @@ li {
 
 .imAlxy-section__content > .inactive-content-tab {
     display: none;
-}
-.imAlxy-section__content {
-    background-color: var(--white);
-    height: calc(100% - 2rem);
-    padding: 1.2rem;
-    
-    border-radius: 0 0 1.2rem 1.2rem;
 }
 
 .imAlxy-section__content > li  {
@@ -148,18 +149,8 @@ li {
     align-items: center;
 }
 
+
 /* Here's the beginning of the second section */
-
-.proyects-section {
-    display: grid;
-    grid-template-rows: auto 1fr;
-    gap: 1.2rem;
-}
-
-.proyects-section__proyect {
-    display: grid;
-    grid-template-rows: auto 1fr;
-}
 
 .proyects-section__proyect__tabs-tab {
     width: 100%;
@@ -191,14 +182,48 @@ li {
     justify-content: center;
 }
 
-.proyects-section__proyect-preview > img {
-    width: auto;
-    height: 60vh;
-
-    border-radius: 1rem;
-    border: solid var(--orange-giants);
+.proyects-section__proyect__content > .inactive-content-tab {
+    display: none;
 }
 
+.proyects-section__proyect__content-preview {
+    width: calc(100vw - 4 * 1.2rem);
+    height: 100%;
+
+    display: flex;
+    flex-direction: column;
+    gap: .8rem;
+
+    text-align: center;
+}
+
+.proyects-section__proyect__content-preview > a {
+    color: var(--orange-giants);
+    font-weight: bold;
+
+    border: solid var(--orange-giants);
+    border-radius: 1rem;
+
+    padding: .4rem .8rem;
+    align-self: center;
+}
+
+.proyects-section__proyect__content-preview > figure > img {
+    width: 100%;
+    height: auto;
+    border: solid var(--orange-giants);
+    border-radius: 1rem;
+}
+
+.proyects-section__proyect__content-text {
+    height: 100%;
+
+    display: flex;
+
+    align-items: center;
+}
+
+/* Here  starts the code of last section */
 .contact-info-section {
     display: grid;
     grid-template-rows: auto 1fr;

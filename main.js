@@ -9,6 +9,9 @@ const contentFourthTabFirstSection = document.querySelector ('.imAlxy-section__c
 
 const firstTabSecondSection = document.querySelector('.proyects-section__proyect__tabs-tab:first-child');
 const secondTabSecondSection = document.querySelector('.proyects-section__proyect__tabs-tab:last-child');
+const contentFirstTabSecondSection = document.querySelector('.proyects-section__proyect__content > li:first-child');
+const contentSecondTabSecondSection = document.querySelector('.proyects-section__proyect__content > li:last-child');
+
 
 firstTabFirstSection.addEventListener('click', clickFirstTabFirstSection);
 secondTabFirstSection.addEventListener('click', clickSecondTabFirstSection);
@@ -19,111 +22,122 @@ firstTabSecondSection.addEventListener('click', clickFirstTabSecondSection);
 secondTabSecondSection.addEventListener('click', clickSecondTabSecondSection);
 
 function clickFirstTabFirstSection () {
-    firstTabFirstSection.classList.remove('inactive-tab');
     firstTabFirstSection.classList.add('active-tab');
-    contentFirstTabFirstSection.classList.remove('inactive-content-tab');
+    firstTabFirstSection.classList.remove('inactive-tab');
     contentFirstTabFirstSection.classList.add('active-content-tab');
+    contentFirstTabFirstSection.classList.remove('inactive-content-tab');
     
-    secondTabFirstSection.classList.remove('active-tab');
     secondTabFirstSection.classList.add('inactive-tab');
-    contentSecondTabFirstSection.classList.remove('active-content-tab');
+    secondTabFirstSection.classList.remove('active-tab');
     contentSecondTabFirstSection.classList.add('inactive-content-tab');
+    contentSecondTabFirstSection.classList.remove('active-content-tab');
     
     
-    thirdTabFirstSection.classList.remove('active-tab');
     thirdTabFirstSection.classList.add('inactive-tab');
-    contentThirdTabFirstSection.classList.remove('active-content-tab');
+    thirdTabFirstSection.classList.remove('active-tab');
     contentThirdTabFirstSection.classList.add('inactive-content-tab');
+    contentThirdTabFirstSection.classList.remove('active-content-tab');
     
-    fourthTabFirstSection.classList.remove('active-tab');
     fourthTabFirstSection.classList.add('inactive-tab');
-    contentFourthTabFirstSection.classList.remove('active-content-tab');
+    fourthTabFirstSection.classList.remove('active-tab');
     contentFourthTabFirstSection.classList.add('inactive-content-tab');
+    contentFourthTabFirstSection.classList.remove('active-content-tab');
 }
 
 function clickSecondTabFirstSection () {
-    firstTabFirstSection.classList.remove('active-tab');
     firstTabFirstSection.classList.add('inactive-tab');
-    contentFirstTabFirstSection.classList.remove('active-content-tab');
+    firstTabFirstSection.classList.remove('active-tab');
     contentFirstTabFirstSection.classList.add('inactive-content-tab');
+    contentFirstTabFirstSection.classList.remove('active-content-tab');
     
-    secondTabFirstSection.classList.remove('inactive-tab');
     secondTabFirstSection.classList.add('active-tab');
-    contentSecondTabFirstSection.classList.remove('inactive-content-tab');
+    secondTabFirstSection.classList.remove('inactive-tab');
     contentSecondTabFirstSection.classList.add('active-content-tab');
+    contentSecondTabFirstSection.classList.remove('inactive-content-tab');
 
 
-    thirdTabFirstSection.classList.remove('active-tab');
     thirdTabFirstSection.classList.add('inactive-tab');
-    contentThirdTabFirstSection.classList.remove('active-content-tab');
+    thirdTabFirstSection.classList.remove('active-tab');
     contentThirdTabFirstSection.classList.add('inactive-content-tab');
+    contentThirdTabFirstSection.classList.remove('active-content-tab');
 
-    fourthTabFirstSection.classList.remove('active-tab');
     fourthTabFirstSection.classList.add('inactive-tab');
-    contentFourthTabFirstSection.classList.remove('active-content-tab');
+    fourthTabFirstSection.classList.remove('active-tab');
     contentFourthTabFirstSection.classList.add('inactive-content-tab');
+    contentFourthTabFirstSection.classList.remove('active-content-tab');
 
 }
 
 function clickThirdTabFirstSection () {
-    firstTabFirstSection.classList.remove('active-tab');
     firstTabFirstSection.classList.add('inactive-tab');
-    contentFirstTabFirstSection.classList.remove('active-content-tab');
+    firstTabFirstSection.classList.remove('active-tab');
     contentFirstTabFirstSection.classList.add('inactive-content-tab');
+    contentFirstTabFirstSection.classList.remove('active-content-tab');
 
-    secondTabFirstSection.classList.remove('active-tab');
     secondTabFirstSection.classList.add('inactive-tab');
-    contentSecondTabFirstSection.classList.remove('active-content-tab');
+    secondTabFirstSection.classList.remove('active-tab');
     contentSecondTabFirstSection.classList.add('inactive-content-tab');
+    contentSecondTabFirstSection.classList.remove('active-content-tab');
 
 
-    thirdTabFirstSection.classList.remove('inactive-tab');
     thirdTabFirstSection.classList.add('active-tab');
-    contentThirdTabFirstSection.classList.remove('inactive-content-tab');
+    thirdTabFirstSection.classList.remove('inactive-tab');
     contentThirdTabFirstSection.classList.add('active-content-tab');
+    contentThirdTabFirstSection.classList.remove('inactive-content-tab');
 
-    fourthTabFirstSection.classList.remove('active-tab');
     fourthTabFirstSection.classList.add('inactive-tab');
-    contentFourthTabFirstSection.classList.remove('active-content-tab');
+    fourthTabFirstSection.classList.remove('active-tab');
     contentFourthTabFirstSection.classList.add('inactive-content-tab');
+    contentFourthTabFirstSection.classList.remove('active-content-tab');
 
 }
 
 function clickFourthTabFirstSection () {
-    firstTabFirstSection.classList.remove('active-tab');
     firstTabFirstSection.classList.add('inactive-tab');
-    contentFirstTabFirstSection.classList.remove('active-content-tab');
+    firstTabFirstSection.classList.remove('active-tab');
     contentFirstTabFirstSection.classList.add('inactive-content-tab');
+    contentFirstTabFirstSection.classList.remove('active-content-tab');
     
-    secondTabFirstSection.classList.remove('active-tab');
     secondTabFirstSection.classList.add('inactive-tab');
-    contentSecondTabFirstSection.classList.remove('active-content-tab');
+    secondTabFirstSection.classList.remove('active-tab');
     contentSecondTabFirstSection.classList.add('inactive-content-tab');
+    contentSecondTabFirstSection.classList.remove('active-content-tab');
 
-    thirdTabFirstSection.classList.remove('active-tab');
     thirdTabFirstSection.classList.add('inactive-tab');
-    contentThirdTabFirstSection.classList.remove('active-content-tab');
+    thirdTabFirstSection.classList.remove('active-tab');
     contentThirdTabFirstSection.classList.add('inactive-content-tab');
+    contentThirdTabFirstSection.classList.remove('active-content-tab');
 
-    fourthTabFirstSection.classList.remove('inactive-tab');
     fourthTabFirstSection.classList.add('active-tab');
-    contentFourthTabFirstSection.classList.remove('inactive-content-tab');
+    fourthTabFirstSection.classList.remove('inactive-tab');
     contentFourthTabFirstSection.classList.add('active-content-tab');
+    contentFourthTabFirstSection.classList.remove('inactive-content-tab');
 }
 
 
 function clickFirstTabSecondSection () {
-    firstTabSecondSection.classList.remove('inactive-tab');
     firstTabSecondSection.classList.add('active-tab');
+    firstTabSecondSection.classList.remove('inactive-tab');
+    contentFirstTabSecondSection.classList.add("active-content-tab")
+    contentFirstTabSecondSection.classList.remove("inactive-content-tab")
     
-    secondTabSecondSection.classList.remove('active-tab');
     secondTabSecondSection.classList.add('inactive-tab');
+    secondTabSecondSection.classList.remove('active-tab');
+    contentSecondTabSecondSection.classList.add("inactive-content-tab")
+    contentSecondTabSecondSection.classList.remove("active-content-tab")
 }
 
 function clickSecondTabSecondSection () {
-    firstTabSecondSection.classList.remove('active-tab');
     firstTabSecondSection.classList.add('inactive-tab');
+    firstTabSecondSection.classList.remove('active-tab');
+    contentFirstTabSecondSection.classList.add('inactive-content-tab');
+    contentFirstTabSecondSection.classList.remove('active-content-tab');
+
     
-    secondTabSecondSection.classList.remove('inactive-tab');
     secondTabSecondSection.classList.add('active-tab');
+    secondTabSecondSection.classList.remove('inactive-tab');
+    console.log(5)
+    contentSecondTabSecondSection.classList.add('active-content-tab')
+    contentSecondTabSecondSection.classList.remove('inactive-content-tab')
+
 }
