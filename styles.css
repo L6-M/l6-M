@@ -161,7 +161,7 @@ li {
     grid-template-rows: auto 1fr;
 }
 
-.proyects-section__proyect__tabs > li {
+.proyects-section__proyect__tabs-tab {
     width: 100%;
     
     display: flex;
@@ -169,15 +169,12 @@ li {
     align-items: center;
 }
 
-.proyects-section__proyect__tabs > li:first-child {
-    background-color: var(--white);
-    color: var(--gray-dark);
-
+.proyects-section__proyect__tabs-tab:first-child {
     grid-column-start: 1;
     grid-column-end: 3;
 }
 
-.proyects-section__proyect__tabs > li:last-child {
+.proyects-section__proyect__tabs-tab:last-child {
     grid-column-start: 3;
     grid-column-end: 5;
 }
@@ -203,9 +200,9 @@ li {
 }
 
 .contact-info-section {
- display: grid;
- grid-template-rows: auto 1fr;
- gap: 1.2rem;
+    display: grid;
+    grid-template-rows: auto 1fr;
+    gap: 1.2rem;
 }
 
 .contact-info-section__list {
