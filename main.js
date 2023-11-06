@@ -141,3 +141,25 @@ function clickSecondTabSecondSection () {
     contentSecondTabSecondSection.classList.remove('inactive-content-tab')
 
 }
+
+let scrolling = false;
+
+window.addEventListener('wheel', (event) => {
+  if (!scrolling) {
+    scrolling = true;
+
+    const windowHeight = window.innerHeight;
+    const currentScroll = window.scrollY;
+    const newScroll = currentScroll + (event.deltaY > 0 ? windowHeight : -windowHeight);
+
+    window.scrollTo({
+      top: newScroll,
+      behavior: 'smooth'
+    });
+
+    setTimeout(() => {
+      scrolling = false;
+    }, 10); // Ajusta el tiempo que se espera entre eventos de scroll y la duración de la transición
+  }
+});
+
