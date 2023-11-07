@@ -1,165 +1,69 @@
-const firstTabFirstSection = document.querySelector('.imAlxy-section__tabs-tab:nth-child(1)');
-const secondTabFirstSection = document.querySelector('.imAlxy-section__tabs-tab:nth-child(2)');
-const thirdTabFirstSection = document.querySelector('.imAlxy-section__tabs-tab:nth-child(3)');
-const fourthTabFirstSection = document.querySelector('.imAlxy-section__tabs-tab:nth-child(4)');
-const contentFirstTabFirstSection = document.querySelector ('.imAlxy-section__content > li:nth-child(1)');
-const contentSecondTabFirstSection = document.querySelector ('.imAlxy-section__content > li:nth-child(2)');
-const contentThirdTabFirstSection = document.querySelector ('.imAlxy-section__content > li:nth-child(3)');
-const contentFourthTabFirstSection = document.querySelector ('.imAlxy-section__content > li:nth-child(4)');
+const tabsFirstSection = document.querySelectorAll('.imAlxy-section__tabs-tab');
+const contentFirstSection = document.querySelectorAll('.imAlxy-section__content > li');
+const tabsSecondSection = document.querySelectorAll('.proyects-section__proyect__tabs-tab');
+const contentSecondSection = document.querySelectorAll('.proyects-section__proyect__content > li');
 
-const firstTabSecondSection = document.querySelector('.proyects-section__proyect__tabs-tab:first-child');
-const secondTabSecondSection = document.querySelector('.proyects-section__proyect__tabs-tab:last-child');
-const contentFirstTabSecondSection = document.querySelector('.proyects-section__proyect__content > li:first-child');
-const contentSecondTabSecondSection = document.querySelector('.proyects-section__proyect__content > li:last-child');
+function addTabClickListeners(tabs, content) {
+  tabs.forEach((tab, index) => {
+    tab.addEventListener('click', () => {
+      tabs.forEach((t) => {
+        t.classList.remove('active-tab');
+        t.classList.add('inactive-tab');
+      });
+      content.forEach((c) => c.classList.add('inactive-content-tab'));
 
-
-firstTabFirstSection.addEventListener('click', clickFirstTabFirstSection);
-secondTabFirstSection.addEventListener('click', clickSecondTabFirstSection);
-thirdTabFirstSection.addEventListener('click', clickThirdTabFirstSection);
-fourthTabFirstSection.addEventListener('click', clickFourthTabFirstSection);
-
-firstTabSecondSection.addEventListener('click', clickFirstTabSecondSection);
-secondTabSecondSection.addEventListener('click', clickSecondTabSecondSection);
-
-function clickFirstTabFirstSection () {
-    firstTabFirstSection.classList.add('active-tab');
-    firstTabFirstSection.classList.remove('inactive-tab');
-    contentFirstTabFirstSection.classList.add('active-content-tab');
-    contentFirstTabFirstSection.classList.remove('inactive-content-tab');
-    
-    secondTabFirstSection.classList.add('inactive-tab');
-    secondTabFirstSection.classList.remove('active-tab');
-    contentSecondTabFirstSection.classList.add('inactive-content-tab');
-    contentSecondTabFirstSection.classList.remove('active-content-tab');
-    
-    
-    thirdTabFirstSection.classList.add('inactive-tab');
-    thirdTabFirstSection.classList.remove('active-tab');
-    contentThirdTabFirstSection.classList.add('inactive-content-tab');
-    contentThirdTabFirstSection.classList.remove('active-content-tab');
-    
-    fourthTabFirstSection.classList.add('inactive-tab');
-    fourthTabFirstSection.classList.remove('active-tab');
-    contentFourthTabFirstSection.classList.add('inactive-content-tab');
-    contentFourthTabFirstSection.classList.remove('active-content-tab');
-}
-
-function clickSecondTabFirstSection () {
-    firstTabFirstSection.classList.add('inactive-tab');
-    firstTabFirstSection.classList.remove('active-tab');
-    contentFirstTabFirstSection.classList.add('inactive-content-tab');
-    contentFirstTabFirstSection.classList.remove('active-content-tab');
-    
-    secondTabFirstSection.classList.add('active-tab');
-    secondTabFirstSection.classList.remove('inactive-tab');
-    contentSecondTabFirstSection.classList.add('active-content-tab');
-    contentSecondTabFirstSection.classList.remove('inactive-content-tab');
-
-
-    thirdTabFirstSection.classList.add('inactive-tab');
-    thirdTabFirstSection.classList.remove('active-tab');
-    contentThirdTabFirstSection.classList.add('inactive-content-tab');
-    contentThirdTabFirstSection.classList.remove('active-content-tab');
-
-    fourthTabFirstSection.classList.add('inactive-tab');
-    fourthTabFirstSection.classList.remove('active-tab');
-    contentFourthTabFirstSection.classList.add('inactive-content-tab');
-    contentFourthTabFirstSection.classList.remove('active-content-tab');
-
-}
-
-function clickThirdTabFirstSection () {
-    firstTabFirstSection.classList.add('inactive-tab');
-    firstTabFirstSection.classList.remove('active-tab');
-    contentFirstTabFirstSection.classList.add('inactive-content-tab');
-    contentFirstTabFirstSection.classList.remove('active-content-tab');
-
-    secondTabFirstSection.classList.add('inactive-tab');
-    secondTabFirstSection.classList.remove('active-tab');
-    contentSecondTabFirstSection.classList.add('inactive-content-tab');
-    contentSecondTabFirstSection.classList.remove('active-content-tab');
-
-
-    thirdTabFirstSection.classList.add('active-tab');
-    thirdTabFirstSection.classList.remove('inactive-tab');
-    contentThirdTabFirstSection.classList.add('active-content-tab');
-    contentThirdTabFirstSection.classList.remove('inactive-content-tab');
-
-    fourthTabFirstSection.classList.add('inactive-tab');
-    fourthTabFirstSection.classList.remove('active-tab');
-    contentFourthTabFirstSection.classList.add('inactive-content-tab');
-    contentFourthTabFirstSection.classList.remove('active-content-tab');
-
-}
-
-function clickFourthTabFirstSection () {
-    firstTabFirstSection.classList.add('inactive-tab');
-    firstTabFirstSection.classList.remove('active-tab');
-    contentFirstTabFirstSection.classList.add('inactive-content-tab');
-    contentFirstTabFirstSection.classList.remove('active-content-tab');
-    
-    secondTabFirstSection.classList.add('inactive-tab');
-    secondTabFirstSection.classList.remove('active-tab');
-    contentSecondTabFirstSection.classList.add('inactive-content-tab');
-    contentSecondTabFirstSection.classList.remove('active-content-tab');
-
-    thirdTabFirstSection.classList.add('inactive-tab');
-    thirdTabFirstSection.classList.remove('active-tab');
-    contentThirdTabFirstSection.classList.add('inactive-content-tab');
-    contentThirdTabFirstSection.classList.remove('active-content-tab');
-
-    fourthTabFirstSection.classList.add('active-tab');
-    fourthTabFirstSection.classList.remove('inactive-tab');
-    contentFourthTabFirstSection.classList.add('active-content-tab');
-    contentFourthTabFirstSection.classList.remove('inactive-content-tab');
-}
-
-
-function clickFirstTabSecondSection () {
-    firstTabSecondSection.classList.add('active-tab');
-    firstTabSecondSection.classList.remove('inactive-tab');
-    contentFirstTabSecondSection.classList.add("active-content-tab")
-    contentFirstTabSecondSection.classList.remove("inactive-content-tab")
-    
-    secondTabSecondSection.classList.add('inactive-tab');
-    secondTabSecondSection.classList.remove('active-tab');
-    contentSecondTabSecondSection.classList.add("inactive-content-tab")
-    contentSecondTabSecondSection.classList.remove("active-content-tab")
-}
-
-function clickSecondTabSecondSection () {
-    firstTabSecondSection.classList.add('inactive-tab');
-    firstTabSecondSection.classList.remove('active-tab');
-    contentFirstTabSecondSection.classList.add('inactive-content-tab');
-    contentFirstTabSecondSection.classList.remove('active-content-tab');
-
-    
-    secondTabSecondSection.classList.add('active-tab');
-    secondTabSecondSection.classList.remove('inactive-tab');
-    console.log(5)
-    contentSecondTabSecondSection.classList.add('active-content-tab')
-    contentSecondTabSecondSection.classList.remove('inactive-content-tab')
-
-}
-
-let scrolling = false;
-
-window.addEventListener('wheel', (event) => {
-  if (!scrolling) {
-    scrolling = true;
-
-    const windowHeight = window.innerHeight;
-    const currentScroll = window.scrollY;
-    const newScroll = currentScroll + (event.deltaY > 0 ? windowHeight : -windowHeight);
-
-    window.scrollTo({
-      top: newScroll,
-      behavior: 'smooth'
+      tab.classList.remove('inactive-tab');
+      tab.classList.add('active-tab');
+      content[index].classList.remove('inactive-content-tab');
+      content[index].classList.add('active-content-tab');
     });
+  });
+}
 
-    setTimeout(() => {
-      scrolling = false;
-    }, 10); // Ajusta el tiempo que se espera entre eventos de scroll y la duración de la transición
-  }
+addTabClickListeners(tabsFirstSection, contentFirstSection);
+addTabClickListeners(tabsSecondSection, contentSecondSection);
+
+
+// Obtén todas las secciones de proyectos
+const projectSections = document.querySelectorAll('.proyects-section__proyect');
+
+projectSections.forEach((section) => {
+  // Para cada sección de proyectos, obtén sus pestañas y contenido
+  const tabs = section.querySelectorAll('.proyects-section__proyect__tabs-tab');
+  const content = section.querySelectorAll('.proyects-section__proyect__content > li');
+
+  // Agrega un manejador de clic para las pestañas de esta sección
+  tabs.forEach((tab, index) => {
+    tab.addEventListener('click', () => {
+      // Restablece el estado de todas las pestañas y contenido en esta sección
+      tabs.forEach((t) => t.classList.remove('active-tab'));
+      content.forEach((c) => c.classList.add('inactive-content-tab'));
+
+      // Establece la pestaña clickeada como activa y su contenido correspondiente
+      tab.classList.add('active-tab');
+      content[index].classList.remove('inactive-content-tab');
+    });
+  });
 });
+
+// let scrolling = false;
+
+// window.addEventListener('wheel', (event) => {
+//   if (!scrolling) {
+//     scrolling = true;
+
+//     const windowHeight = window.innerHeight;
+//     const currentScroll = window.scrollY;
+//     const newScroll = currentScroll + (event.deltaY > 0 ? windowHeight : -windowHeight);
+
+//     window.scrollTo({
+//       top: newScroll,
+//       behavior: 'smooth'
+//     });
+
+//     setTimeout(() => {
+//       scrolling = false;
+//     }, 10); // Ajusta el tiempo que se espera entre eventos de scroll y la duración de la transición
+//   }
+// });
 
